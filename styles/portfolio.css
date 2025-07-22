@@ -208,9 +208,6 @@ footer input[type="text"], footer input[type="email"], footer textarea{
 }
 
 /* Responsive media query */
-.hide {
-    display: none;
-}
 
 @media screen and (max-width: 576px) {
     nav,
@@ -253,4 +250,12 @@ footer input[type="text"], footer input[type="email"], footer textarea{
 .about {
     padding:20px;
 }
+}
+
+/* tablet specific media query */
+@media screen and (min-width:576px) and (max-width:990px) {
+    .banner,
+    .skills-container {
+        flex-direction: column;
+    }
 }
